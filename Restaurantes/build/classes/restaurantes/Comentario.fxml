@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="139.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurantes.ComentarioController">
+   <children>
+      <Label fx:id="nomUsuario" layoutX="68.0" layoutY="25.0" text="Nombre Usuario" AnchorPane.leftAnchor="69.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="textoComentario" editable="false" layoutX="14.0" layoutY="35.0" prefColumnCount="10" prefWidth="492.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="69.0" />
+      <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="454.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <image>
+            <Image url="/botones/Perfil.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

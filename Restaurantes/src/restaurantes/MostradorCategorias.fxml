@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurantes.MostradorCategoriasController">
+   <children>
+      <JFXListView fx:id="listaCategorias" layoutX="78.0" layoutY="57.0" onMouseClicked="#clickCategorias" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="57.0" />
+      <Label alignment="CENTER" layoutX="102.0" layoutY="27.0" text="CATEGORIAS" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

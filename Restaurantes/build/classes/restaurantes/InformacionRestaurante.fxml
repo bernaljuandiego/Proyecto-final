@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="247.0" maxWidth="370.0" opacity="0.38" prefHeight="247.0" prefWidth="370.0" style="-fx-background-color: #c0c0c0; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurantes.InformacionRestauranteController">
+   <children>
+      <AnchorPane opacity="0.94" prefHeight="244.0" prefWidth="368.0">
+         <children>
+            <ImageView fx:id="imagen" fitHeight="84.0" fitWidth="108.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lblNombre" layoutX="112.0" layoutY="14.0" text="Bacon Scape">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></Label>
+            <Label fx:id="lblCategoria" layoutX="112.0" layoutY="44.0" text="Genero">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font></Label>
+            <Label fx:id="lblEstrellitas" layoutX="114.0" layoutY="70.0" text="estrellitas" textFill="#eb9d00">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Label>
+            <ScrollPane hbarPolicy="NEVER" layoutX="19.0" layoutY="105.0" maxHeight="130.0" maxWidth="331.0" vbarPolicy="NEVER">
+               <content>
+                  <HBox spacing="10.0" style="-fx-background-color: #c0c0c0;">
+                     <children>
+                        <ImageView fx:id="img1" fitHeight="130.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="img2" fitHeight="130.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="img3" fitHeight="130.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="img4" fitHeight="130.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="img5" fitHeight="130.0" layoutX="40.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

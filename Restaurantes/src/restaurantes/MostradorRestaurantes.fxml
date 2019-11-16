@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXMasonryPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurantes.MostradorRestaurantesController">
+   <center>
+      <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER">
+         <content>
+            <JFXMasonryPane fx:id="juegos" style="-fx-background-image: url(&quot;/botones/textura.jpg&quot;);" />
+         </content>
+      </ScrollPane>
+   </center>
+   <top>
+      <AnchorPane style="-fx-background-color: #f0f0f0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblTitulo" alignment="CENTER" layoutX="130.0" layoutY="10.0" prefHeight="50.0" prefWidth="330.0" text="Todos los Restaurantes" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="botonCerrar" alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="RIGHT" onAction="#accionCerrar" prefHeight="50.0" ripplerFill="#21a7e1" text="〈 Atrás" textFill="#049aff" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
